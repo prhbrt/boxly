@@ -12,7 +12,7 @@ setup(
     ],
     author='H.T. Kruitbosch',
     author_email='boxly@herbertkruitbosch.com',
-    description='Shapely, but for bounding boxes represented by `np.ndarrays`. Not even close to a a drop-in replacement though.',
+    description='Shapely, but for bounding boxes represented by `np.ndarrays`. Not even close to a drop-in replacement though.',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
     url='https://github.com/prhbrt/boxly',

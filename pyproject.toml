@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "boxly_prhbrt"
+version = "0.0.1"
+authors = [
+  { name="Herbert Kruitbosch", email="boxly@prinsherbert.nl" },
+]
+description = "small, underimplemented geometry package for bounding boxes"
+readme = "README.md"
+requires-python = ">=3.0"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/prhbrt/boxly"
+Issues = "https://github.com/prhbrt/boxly/issues"
