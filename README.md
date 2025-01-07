@@ -94,7 +94,7 @@ plt.legend()
 ![line clustering with 1D vertical IoU](line-clustering.png)
 
 
-## Example use to cluster lines
+## Example use to assign characters to layout regions
 
 Continues with previous example
 
