@@ -39,7 +39,7 @@ Returns a matrix of `len(boxes0)` $\times$ `len(boxes1)` of the pairwise areas o
 import numpy as np
 from sklearn.cluster import DBSCAN
 import matplotlib.pyplot as plt
-from boxly.ops import iou
+from boxly.ops import iou, inclusion
 
 # Create 10 random bounding boxes that follow (i.e. via the cumsum) each other
 # on a line, to simulate the result of an OCR
