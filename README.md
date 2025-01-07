@@ -4,6 +4,12 @@ For example, considering only the vertical dimension of the bounding boxes of de
 
 Or consider assigning detected OCR characters to larger layout detections, like tables, figure captions, from a different model.
 
+# Installation
+
+```bash
+pip3 install boxly
+```
+
 # Representation
 
 For efficiency, the functions operate on sets of bounding boxes, defined by a `np.ndarray` of shape $n_{boxes} \times 2 \times n_{dimenions}$
