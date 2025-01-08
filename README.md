@@ -77,7 +77,7 @@ lines = DBSCAN(
 # Create a random color for each line
 line_colors = plt.get_cmap('rainbow')(np.linspace(0, 1, lines.max()+2))
 np.random.shuffle(line_colors)
-line_colors[0, :] = 0 # black for outliers, they could exist if eps is to low
+line_colors[0, :] = 0 # black for outliers, they could exist if eps is too low
                       # or min_samples too high.
 
 # Transform into polygons and plot
@@ -112,16 +112,14 @@ included_in_layout = inclusion(detected_characters, layout_items)
 # pick the layout box with the largest inclusion
 layout_assignment = included_in_layout.argmax(1)
 
-# make outlier of less than 75% is included
+# make outlier if less than 75% is included
 threshold = 0.75
 layout_assignment[included_in_layout.max(1) < threshold] = -1
 
 # Create a random color for each line
 layout_colors = plt.get_cmap('rainbow')(np.linspace(0, 1, len(layout_items)+1))
 np.random.shuffle(layout_colors)
-layout_colors[0, :3] = 0 # black for outliers, they could exist if eps is to low
-                         # or min_samples too high.
-
+layout_colors[0, :3] = 0 # black for outliers, as created by the thresholding above.
 
 plt.figure(figsize=(20, 20))
 plt.xticks([]); plt.yticks([])
