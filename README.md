@@ -91,7 +91,7 @@ for line, line_color in enumerate(line_colors, start=-1):
 plt.legend()
 ```
 
-![line clustering with 1D vertical IoU](line-clustering.png)
+![line clustering with 1D vertical IoU](https://raw.githubusercontent.com/prhbrt/boxly/main/line-clustering.png)
 
 
 ## Example use to assign characters to layout regions
@@ -136,6 +136,6 @@ for layout, layout_color in enumerate(layout_colors, start=-1):
 plt.legend()
 ```
 
-![assignment to layout boxes with inclusion](layout-assignment.png)
+![assignment to layout boxes with inclusion](https://raw.githubusercontent.com/prhbrt/boxly/main/layout-assignment.png)
 
 
